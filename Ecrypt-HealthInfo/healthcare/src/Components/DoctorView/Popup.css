@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    background-color: rgba(151, 191, 233, 0.71);
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 7%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    /* bottom: 20px; */
+}
+.doctor-popup{
+    height: 40%;
+    width: 400px;
+    border: 2px solid #364d79;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    padding: 10px;
+}
+.doctor-popup-header{
+    background-color: #364d79;
+    text-align: start;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    /* border-bottom: 2px solid black;   */
+}
+.closePopup{
+    background-color: white;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    align-items: center;
+    color: #364d79;
+    justify-content: center;
+    position: absolute;
+    right: -5%;
+    top: -4%;
+    z-index: 3;
+    cursor: pointer;
+}
+.doctor-popupBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    height: 80%;
+    color: grey;
+    text-align: center;
+}
+button{
+    background-color: #364d79;
+    color: white;
+    padding: 15px 15px; 
+    border-radius: 20px;
+    font-size: 16px;
+    box-shadow: 0px 5px 10px 0px rgba(54, 133, 224, 0.5);
+    cursor: pointer;
+}

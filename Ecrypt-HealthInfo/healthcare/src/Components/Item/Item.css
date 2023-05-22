@@ -1,0 +1,27 @@
+.itemContainer{
+    width: 100%;
+    padding: 15px;
+    box-shadow: 2px 3px 5px 0px rgba(28, 75, 128, 0.5);
+    border: 2px solid rgb(193, 192, 192);
+    
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.itemButton{
+    background-color: #22385f;
+    color: white;
+    border-radius: 10px;
+    /* padding: 5px; */
+}
+.dateAndButton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.iconAndName{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

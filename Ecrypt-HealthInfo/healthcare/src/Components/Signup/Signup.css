@@ -1,0 +1,76 @@
+
+.signupMainBody{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins';
+}
+
+.signupContainer{
+    width: 500px;
+    height: 70%;
+    border: 5px solid #446091;
+    box-shadow: 0px 5px 10px 0px rgba(54, 133, 224, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inputWala input{
+    width: 100%;
+    padding: 10px;
+    /* border-radius: 5px; */
+    border: 2px solid rgb(186, 185, 185);
+}
+
+.signupIconinput{
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 0px 0px 10px;
+    box-shadow: 0px 5px 10px 0px rgba(104, 159, 223, 0.5);
+}
+
+.signupButton{
+    margin-inline: auto;
+    padding: 10px 80px;
+    border-radius: 20px;
+    background-color: #446091;
+    color: white;
+    font-size: 20px;
+    border: 2px solid black;
+    box-shadow: 0px 5px 10px 0px rgba(28, 75, 128, 0.5);
+    cursor: pointer;
+    margin-block: auto;
+}
+
+/* Add media query for screens smaller than 500px */
+@media only screen and (max-width: 500px) {
+    .signupContainer {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+/* Add media query for screens between 500px and 768px */
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+    .signupContainer {
+        width: 80%;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+/* Add media query for screens larger than 768px */
+@media only screen and (max-width: 768px) {
+    .signupMainBody{
+        width: 80vw;
+    }
+}

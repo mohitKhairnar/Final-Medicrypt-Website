@@ -1,0 +1,188 @@
+.formContainer{
+    width: 74%;
+    height: 100vh;
+    margin-top: 20px;
+    margin-inline: auto;
+    box-shadow: 0px 5px 10px 0px rgba(28, 75, 128, 0.5);
+    padding: 20px;
+    border: 2px solid grey;
+    font-family: 'poppins';
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.formHeader{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.leftWala{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.leftHeader{
+    width: 200px;
+}
+.rightWala{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: end;
+}
+.leftHeader img{
+    width: 200px;
+}
+.breaker{
+    border: 2px solid black;
+    box-shadow: 0px 3px 5px 6px rgb(215, 211, 211);
+}
+.formBody{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-block: 20px;
+    justify-content: center;
+}
+.dateAndTime{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.dateAndTime h4{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+.AgeWeight{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.formInputWala input{
+    box-shadow: 0px 5px 10px 0px rgba(154, 183, 216, 0.5);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.formInputWala input:hover{
+    background-color: rgb(224, 231, 239);
+}
+.description textarea{
+    box-shadow: 0px 5px 10px 0px rgba(154, 183, 216, 0.5);
+    border: 2px solid black;
+    width: 100%;
+    border-radius: 10px;
+}
+.description textarea:hover{
+    background-color: rgb(224, 231, 239);
+}
+.allMedicines{
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(154, 183, 216, 0.5);
+}
+.singleMedicine{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.medicineInput{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.medicineRemove{
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #22385f;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 0px rgba(28, 75, 128, 0.5);
+    margin: 10px;
+}
+.medicineAdd{
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #22385f;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 0px rgba(28, 75, 128, 0.5);
+    margin: 10px;
+}
+.requiredMedicalCheckups button{
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #22385f;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 0px rgba(28, 75, 128, 0.5);
+    margin: 10px;
+}
+.testInput{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.allTest{
+    display: grid;
+}
+.test{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px double white;
+    background-color: #22385f;
+    color: white;
+    box-shadow: 0px 5px 10px 0px rgba(28, 75, 128, 0.5);
+    margin: 10px;
+    text-align: center;
+}
+.addingDocuments button{
+    align-items: center;
+    min-width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #22385f;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 0px rgba(28, 75, 128, 0.5);
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+Upload{
+    color: #22385f;
+}
+.submitFormButton{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-top: 20px;
+}
+.submitFormButton button{
+    padding: 12px 50px;
+    border-radius: 20px;
+    font-family: 'poppins';
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background-color: #22385f;
+    box-shadow: 0px 5px 10px 0px rgba(28, 75, 128, 0.5);
+    cursor:progress;
+}
+.nameemail{
+    display: flex;
+    justify-content: space-between;
+}
+.nameemail .formInputWala .input{
+    width: 500px;
+}

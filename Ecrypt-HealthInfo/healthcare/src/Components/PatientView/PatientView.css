@@ -1,0 +1,92 @@
+.patientdata{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2%; 
+    margin-left: 20%;
+    row-gap: 20px;
+    border: 2px solid black;
+    width: 60%;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: 'poppins';
+    overflow: hidden;
+}
+.doctorinfo{
+    display: flex;
+    margin-left: 25%;
+    margin-top: 1%;
+    width: 50%;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+.patientdata .fields{
+    /* background-color: aqua; */
+    font-weight: bold;
+}
+.breaker{
+    border: 1px solid black;
+}
+.medcontainer{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 20%;
+}
+.medicine{
+    display: flex;
+    gap: 20%;
+}
+.ageweight{
+    display: flex;  
+    gap: 40%;
+}
+.medetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formHeader{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.leftWala{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.leftHeader{
+    width: 200px;
+}
+.rightWala{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: end;
+}
+.leftHeader img{
+    width: 200px;
+}
+.medicine{
+    /* overflow: auto; */
+    height: 70%;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+.mainbreak{
+    border: 2px dashed black;
+}
+
+.report{
+    width: 100px;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: #22385f;
+    color: white;
+}

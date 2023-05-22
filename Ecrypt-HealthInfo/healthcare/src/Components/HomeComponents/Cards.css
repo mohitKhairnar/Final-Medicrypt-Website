@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cards-style{
+    display: flex;
+    margin-block: 20px;
+    margin-inline: auto;
+    gap: 20px;
+    justify-content: center;
+}
+.card{
+    width: 20vw;
+    height: 270px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+}
+.cardHeader{
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    background-color: #364d79;
+    padding: 20px;
+}
+.cardDescription{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: grey;
+    padding: 10px;
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    /* max-height: 50px; */
+    /* text-overflow: ellipsis; */
+}
