@@ -4,7 +4,7 @@ import {Navigate, Route,Routes} from 'react-router-dom';
 import Home from './views/Home';
 import Patients from './views/patients';
 import Signup from './Components/Signup/Signup';
-import Default from './Components/Default';
+//import Default from './Components/Default';
 import PatientView from './Components/PatientView/PatientView';
 import DoctorView from './Components/DoctorView/DoctorView';
 import RequireUser from './Components/RequireUser';
