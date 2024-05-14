@@ -85,28 +85,28 @@ const loginController = async (req,res)=>{
 }
 
 //This api will check the refreshToken validity and generate the new accessToken
-const refreshAccessTokenController = async (req,res)=>{
-    // const cookies = req.cookies;
-    // res.cookie('jwt','',{maxAge: 1});
-    // const token = req.cookies[]
-    if(!cookies.jwt){
-        // return res.status(401).send("Refresh token in cookie is required");
-        return res.send(error(401,"Refresh token in cookie is required"));
-    }
-    const refreshToken = cookies.jwt;  
-    try{
-        const decoded = jwt.verify(refreshToken, process.env.REFRESH_TOKEN_PRIVATE_KEY);
-        const _id = decoded._id;
-        const accessToken = generateAccessToken({_id});
-        // return res.status(201).json({accessToken});
-        return res.send(success(201,{accessToken}));
-    }
-    catch(error){
-        console.log(error);
-        // return res.status(401).send("Invalid refresh key");
-        return res.send(error(401,"Invalid refresh key"));
-    }
-}
+// const refreshAccessTokenController = async (req,res)=>{
+//     // const cookies = req.cookies;
+//     // res.cookie('jwt','',{maxAge: 1});
+//     // const token = req.cookies[]
+//     if(!cookies.jwt){
+//         // return res.status(401).send("Refresh token in cookie is required");
+//         return res.send(error(401,"Refresh token in cookie is required"));
+//     }
+//     const refreshToken = cookies.jwt;  
+//     try{
+//         const decoded = jwt.verify(refreshToken, process.env.REFRESH_TOKEN_PRIVATE_KEY);
+//         const _id = decoded._id;
+//         const accessToken = generateAccessToken({_id});
+//         // return res.status(201).json({accessToken});
+//         return res.send(success(201,{accessToken}));
+//     }
+//     catch(error){
+//         console.log(error);
+//         // return res.status(401).send("Invalid refresh key");
+//         return res.send(error(401,"Invalid refresh key"));
+//     }
+// }
 
 
 //functions to generate access token..ye internal function hoga esse hum export nahi kar rahe honge
