@@ -84,16 +84,16 @@ const loginController = async (req,res)=>{
     }
 }
 
-//This api will check the refreshToken validity and generate the new accessToken
-// const refreshAccessTokenController = async (req,res)=>{
-//     // const cookies = req.cookies;
-//     // res.cookie('jwt','',{maxAge: 1});
-//     // const token = req.cookies[]
-//     if(!cookies.jwt){
-//         // return res.status(401).send("Refresh token in cookie is required");
-//         return res.send(error(401,"Refresh token in cookie is required"));
-//     }
-//     const refreshToken = cookies.jwt;  
+This api will check the refreshToken validity and generate the new accessToken
+const refreshAccessTokenController = async (req,res)=>{
+    // const cookies = req.cookies;
+    // res.cookie('jwt','',{maxAge: 1});
+    // const token = req.cookies[]
+    if(!cookies.jwt){
+        // return res.status(401).send("Refresh token in cookie is required");
+        return res.send(error(401,"Refresh token in cookie is required"));
+    }
+    const refreshToken = cookies.jwt;  
     try{
         const decoded = jwt.verify(refreshToken, process.env.REFRESH_TOKEN_PRIVATE_KEY);
         const _id = decoded._id;
